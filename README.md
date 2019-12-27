@@ -1,7 +1,9 @@
 # Recent-Homiletical-Thought
 A database for homiletical research
 
-An annotated list of journal articles, books, and theses/dissertations around the field of homiletics. Each citation will be assigned to at least one of the following topics:
+Live Power BI Database: https://sites.baylor.edu/rht/
+
+An annotated list of journal articles, books, and theses/dissertations around the field of homiletics. Each citation is assigned to at least one of the following topics:
 
 ●	General Works
 
