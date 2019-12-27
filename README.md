@@ -3,7 +3,7 @@ A database for homiletical research
 
 Live Power BI Database: [https://sites.baylor.edu/rht/](https://sites.baylor.edu/rht/)
 
-Video Overview: https://mediaspace.baylor.edu/media/Recent+Homiletical+Thought/0_zsamobf2
+Video Overview: [https://mediaspace.baylor.edu/media/Recent+Homiletical+Thought/0_zsamobf2](https://mediaspace.baylor.edu/media/Recent+Homiletical+Thought/0_zsamobf2)
 
 
 An annotated list of journal articles, books, and theses/dissertations around the field of homiletics. Each citation is assigned to at least one of the following topics:
