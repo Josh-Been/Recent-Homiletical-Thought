@@ -8,6 +8,7 @@ Video Overview: [https://mediaspace.baylor.edu/media/Recent+Homiletical+Thought/
 Files:
 * [Data Management Plan](https://josh-been.github.io/Recent-Homiletical-Thought/DMP-Recent_Homiletical_Thought_Project.docx)
 * [Power BI Project File](https://josh-been.github.io/Recent-Homiletical-Thought/rht.pbix)
+* [Cited Articles](https://josh-been.github.io/Recent-Homiletical-Thought/rht.pbix)
 
 
 An annotated list of journal articles, books, and theses/dissertations around the field of homiletics. Each citation is assigned to at least one of the following topics:
