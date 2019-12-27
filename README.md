@@ -1,7 +1,7 @@
 # Recent-Homiletical-Thought
 A database for homiletical research
 
-Live Power BI Database: https://sites.baylor.edu/rht/
+Live Power BI Database: [https://sites.baylor.edu/rht/](https://sites.baylor.edu/rht/)
 
 Video Overview: https://mediaspace.baylor.edu/media/Recent+Homiletical+Thought/0_zsamobf2
 
