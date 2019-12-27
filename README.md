@@ -1,7 +1,7 @@
 # Recent-Homiletical-Thought
 A database for homiletical research
-[https://josh-been.github.io/Recent-Homiletical-Thought/](https://josh-been.github.io/Recent-Homiletical-Thought/)
-
+<br><br>
+[Themed Readme](https://josh-been.github.io/Recent-Homiletical-Thought/)
 
 Live Power BI Database: [https://sites.baylor.edu/rht/](https://sites.baylor.edu/rht/)
 
