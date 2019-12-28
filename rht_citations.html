@@ -86,35 +86,48 @@
 
 <script>
 	const ENABLE_FIRST_WORD_BOLD = true;
+	const GENERAL_DELIMITER = "|";
+	const SYMBOLS = {
+		"@i": "<i>"
+	}
 
-	let url = window.location.href;
-	url = url.split("|").splice(1);
+	const url = window.location.href;
+	const data = url.split(GENERAL_DELIMITER).splice(1);
 	
 	const content = document.getElementById("content");
-	
-	for(let i = 0; i < url.length; i++){
-		let l = document.createElement("div");
-		l.classList.add("label");
-		let n = document.createElement("div");
-		n.classList.add("item");
-		let b = document.createElement("button");
-		b.innerText = "Copy Text";
-		b.classList.add("copy");
-		n.innerText = decodeURIComponent(url[i]);
+
+	iterateData((data) => {
+		const {label, item, button} = getInitElements();
+		
+		item.innerText = decodeURIComponent(data);
+		
+		const itemTextSplitBySpaces = item.innerText.split(" ");
 		if(ENABLE_FIRST_WORD_BOLD){
-			const text = n.innerText.split(" ");
-			const first = text[0];
-			n.innerText = text.splice(1).join(" ");
-			l.innerText = first;
+			const first = itemTextSplitBySpaces[0];
+			item.innerText = itemTextSplitBySpaces.splice(1).join(" ");
+			label.innerText = first;
 		}
-		b.addEventListener("click", () => {
-			console.log("gfdg");
-			copyTextToClipboard(n.innerText);
+		
+		const keys = Object.keys(SYMBOLS);
+		for(let i = 0; i < keys.length; i++){
+			const key = keys[i];
+			const start = SYMBOLS[key];
+			const end = start.slice(0, 1) + "/" + start.slice(1);
+	
+			let n = 0;
+			item.innerText = item.innerText.replace(new RegExp(key, "g"), (m, i, og) => (n++ % 2) ? end : start);
+		}
+		item.innerHTML = item.innerText;
+		
+		button.addEventListener("click", () => {
+			copyTextToClipboard(item.innerText);
 		});
-		if(ENABLE_FIRST_WORD_BOLD) content.appendChild(l);
-		content.appendChild(b);
-		content.appendChild(n);
-	}
+		
+		if(ENABLE_FIRST_WORD_BOLD) content.appendChild(label);
+		
+		content.appendChild(button);
+		content.appendChild(item);
+	});
 	
 	
 	const msg = "Successfully copied!";
@@ -146,6 +159,24 @@
 		console.error(err);
 	  });
 	}
+	
+	function getInitElements(){
+		let label = document.createElement("div");
+		label.classList.add("label");
+		let item = document.createElement("div");
+		item.classList.add("item");
+		let button = document.createElement("button");
+		button.innerText = "Copy Text";
+		button.classList.add("copy");
+		
+		return {label, item, button};
+	}
+	
+	function iterateData(iter){
+		for(let i = 0; i < data.length; i++){
+			iter(data[i], i)
+		}
+	};
 	
 </script>
 </html>
