@@ -14,6 +14,15 @@ Files:
 * [Cited Books](https://josh-been.github.io/Recent-Homiletical-Thought/RHT-Books.xlsx)
 * [Cited Theses and Dissertations](https://josh-been.github.io/Recent-Homiletical-Thought/RHT-Theses-and-Dissertations.xlsx)
 
+3rd Party Tools Used:
+* [Microsoft Power BI](https://powerbi.microsoft.com/)
+
+Custom Tools Used:
+* [RHT_Processing.ipynb Jupyter Notebook](https://github.com/Josh-Been/Recent-Homiletical-Thought/blob/master/RHT_Processing.ipynb)
+** Prepares the raw data for use within Power BI
+* [rht_citations.html](https://josh-been.github.io/Recent-Homiletical-Thought/rht_citations.html)
+** Assists accessing citation information
+
 
 An annotated list of journal articles, books, and theses/dissertations around the field of homiletics. Each citation is assigned to at least one of the following topics:
 
