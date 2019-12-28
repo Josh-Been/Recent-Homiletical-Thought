@@ -20,9 +20,9 @@ Files:
 
 Custom Tools Used:
 * [RHT_Processing.ipynb Jupyter Notebook](https://github.com/Josh-Been/Recent-Homiletical-Thought/blob/master/RHT_Processing.ipynb)
-** Prepares the raw data for use within Power BI
+  * Prepares the raw data for use within Power BI
 * [rht_citations.html](https://josh-been.github.io/Recent-Homiletical-Thought/rht_citations.html)
-** Assists accessing citation information
+  * Assists accessing citation information
 
 Workflow:
 1. Truett Seminary researchers collect and approve new records in three separate Excel sheets. One each for books, articles, and theses/dissertations.
