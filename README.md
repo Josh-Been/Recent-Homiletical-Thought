@@ -1,7 +1,6 @@
 # Recent-Homiletical-Thought
 An annotated dataabse of journal articles, books, and theses/dissertations around the field of homiletics. The annotations range from a sentence to a paragraph. The initial dataset contains 2,370 citations. Anticipated additions are 2,000 new records per year for the next five years.
 
-<br><br>
 [Themed Readme](https://josh-been.github.io/Recent-Homiletical-Thought/)
 
 Live Power BI Database: [https://sites.baylor.edu/rht/](https://sites.baylor.edu/rht/)
